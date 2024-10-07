@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etProgramID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program ID"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/etProgramName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program Name" />
+
+        <TextView
+            android:id="@+id/ProgramDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program Duration"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ProjectType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Type"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioSoftware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software" />
+
+            <RadioButton
+                android:id="@+id/radioMechanical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mechanical" />
+
+            <RadioButton
+                android:id="@+id/radioElectronics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronics" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/listOfCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of Courses" />
+
+        <CheckBox
+            android:id="@+id/checkCourse01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 01" />
+
+        <CheckBox
+            android:id="@+id/checkCourse02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 02" />
+
+        <CheckBox
+            android:id="@+id/checkCourse03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 03" />
+
+        <CheckBox
+            android:id="@+id/checkCourse04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course 04" />
+
+        <TextView
+            android:id="@+id/ProgramTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date of the Program" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tuitionFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Cost" />
+
+        <EditText
+            android:id="@+id/etProgramCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program Tuition Fee per semester (in $)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT" />
+
+    </LinearLayout>
+</ScrollView>
